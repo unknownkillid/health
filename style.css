@@ -1,0 +1,823 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --fonts-main: 'Open Sans', sans-serif;
+    --grayText: #7D7987;
+    --lightBlue: #97C3F9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonts-main);
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 100px;
+
+}
+
+.logoHeader {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    font-size: medium;
+}
+
+.TLogo {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: rgb(109, 109, 255);
+    color: white;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbarLinks a {
+    font-size: x-large;
+    text-decoration: none;
+    color: gray;
+    padding: 20px;
+}
+
+.firstSection {
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    flex-direction: row;
+    gap: 30px;
+    position: relative;
+}
+
+.mainTextContainer {
+    width: 700px;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mainTextContainer h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.mainTextContainer p {
+    color: gray;
+    font-size: 21px;
+}
+
+.mainButton {
+    width: 200px;
+    height: 56px;
+    font-size: 18px;
+    background-color: #458FF6;
+    border-radius: 55px;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.mainImageContainer {
+    width: 900px;
+    height: 40rem;
+}
+
+.dots {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+}
+
+.col1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.col1 div {
+    width: 10px;
+    height: 10px;
+    background-color: #97C3F9;
+    display: flex;
+    flex-direction: column;
+    border-radius: 100%;
+}
+
+.section2 {
+    width: 100%;
+    height: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(assets/Vector.png);
+    background-position: 0;
+    background-repeat: no-repeat;
+    gap: 50px;
+    position: relative;
+
+}
+
+.section2TextContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.section2TextContainer h1 {
+    font-size: xx-large;
+}
+
+.section2TextContainer p {
+    color: var(--grayText);
+}
+
+.line {
+    width: 100px;
+    height: 3px;
+    background-color: black;
+}
+
+.cardsCotnainer {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.cards1 {
+    width: 80%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.card {
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgb(207, 207, 207);
+}
+
+.section2Btn {
+    color: #458FF6;
+    border: 2px solid #458FF6;
+    background: none;
+    width: 200px;
+    height: 59px;
+    border-radius: 55px;
+    font-size: large;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.dots2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    right: 400px;
+    top: 700px;
+    z-index: -2;
+}
+
+.section3 {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    position: relative;
+}
+
+.section3Cotnainer1 {
+    width: 40%;
+}
+
+.section3Container2 {
+    width: 40%;
+    padding: 50px;
+}
+
+.section3Container2 h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.section3Container2 p {
+    font-size: large;
+    color: var(--grayText);
+}
+
+.lines3 {
+    width: 60px;
+    height: 3px;
+    background-color: black;
+}
+
+.dots3 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+.section4 {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section4ImageCotnainer {
+    width: 40%;
+}
+
+.section4TextContainer {
+    width: 40%;
+}
+
+.line3 {
+    width: 70px;
+    height: 3px;
+    background-color: black;
+}
+
+.section4TextContainer h1 {
+    font-size: 40px;
+}
+
+.section4TextContainer p {
+    color: var(--grayText);
+    font-size: large;
+}
+
+.section5 {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.carousel {
+    width: 1200px;
+    height: 400px;
+    background-color: #3e80a2;
+    background-image: linear-gradient(79deg, #3e80a2 0%, #5a98f2 100%);
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+}
+
+.mainCarousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mainCarousel h1 {
+    font-size: 35px;
+}
+
+.line4 {
+    width: 70px;
+    height: 3px;
+    background-color: white;
+}
+
+.profileCard {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.profimage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    width: 50%;
+}
+
+.profpicimg {
+    border-radius: 50%;
+    outline: 5px solid white;
+}
+
+.comment {
+    width: 50%;
+    text-align: start;
+    padding: 0 30px;
+    font-size: large;
+}
+
+.dotsprof {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
+.name {
+    font-size: x-large;
+}
+
+.carouselDots {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.carouselDots div {
+    width: 10px;
+    height: 10px;
+    background-color: none;
+    border: 2px solid var(--lightBlue);
+    border-radius: 100%;
+}
+
+.controlsContainer {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controlsContainer i {
+    font-size: xx-large;
+    cursor: pointer;
+    color: rgb(93, 93, 255);
+}
+
+.dotsout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    left: 0;
+    bottom: 50px;
+    position: absolute;
+    transform: translateX(-50px);
+    z-index: -1;
+}
+
+
+.animated {
+    animation: animate 1s forwards;
+    z-index: 10;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    50% {
+        transform: rotateZ(3deg);
+    }
+
+    75% {
+        transform: rotateZ(-3deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+.animated2 {
+    animation: animate2 1s forwards;
+    z-index: 10;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    50% {
+        transform: rotateZ(-3deg);
+    }
+
+    75% {
+        transform: rotateZ(3deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+#carouselMain {
+    z-index: 5;
+}
+
+.black {
+    background-color: var(--lightBlue) !important;
+}
+
+.section6 {
+    width: 100%;
+    height: 1000px;
+    background-image: url(assets/Vecto2r.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.articleCards {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.s6textDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cardsarticle {
+    width: 350px;
+    height: 500px;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.s6line {
+    width: 100px;
+    height: 3px;
+    background-color: black;
+}
+
+.s6textDiv h1 {
+    font-size: 40px;
+}
+
+.viewAllButton {
+    color: #458FF6;
+    border: 2px solid #458FF6;
+    background: none;
+    width: 200px;
+    height: 59px;
+    border-radius: 55px;
+    font-size: large;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+footer {
+    width: 100%;
+    height: 500px;
+    background-color: #3e80a2;
+    background-image: linear-gradient(79deg, #3e80a2 0%, #5a98f2 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerCard {
+    width: 500px;
+    height: 250px;
+    padding: 20px;
+    color: white;
+}
+
+.footerCard2 {
+    width: 300px;
+    height: 250px;
+    padding: 20px;
+    color: white;
+    gap: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerCard2 a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 1438px) {
+    .cards1 {
+        height: auto;
+    }
+
+    .section2 {
+        height: auto;
+    }
+
+    .cardsCotnainer {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1221px) {
+    .carousel {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .cards1 {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+@media screen and (max-width: 983px) {
+    .carousel {
+        height: 500px !important;
+    }
+
+    .profileCard {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .comment {
+        width: 90%;
+        text-align: center;
+    }
+
+    .profimage {
+        width: 90%;
+    }
+}
+
+section {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1136px) {
+    .navbarLinks {
+        display: none;
+    }
+
+    .firstSection {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1082px) {
+    .section3 {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 946px) {
+    .section4 {
+        gap: 20px;
+        flex-direction: column;
+        height: 900px;
+    }
+}
+
+@media screen and (max-width: 1223px) {
+    .articleCards {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .section6 {
+        height: auto;
+        gap: 30px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 849px) {
+    .dots {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 753px) {
+    .mainTextContainer {
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 837px) {
+    footer {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .footerCard2 {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 638px) {
+    .mainTextContainer h1 {
+        font-size: xx-large;
+    }
+
+    .mainTextContainer p {
+        font-size: medium;
+    }
+}
+
+
+@media screen and (max-width: 1071px) {
+    .section3Container2 {
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 931px) {
+    .section4 {
+        gap: 30px;
+        text-align: center;
+        height: 700px;
+    }
+
+    .section4TextContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 668px) {
+    .section4ImageCotnainer {
+        display: none;
+    }
+
+    .section3Cotnainer1 img {
+        display: none;
+    }
+
+    .dotsout {
+        display: none;
+    }
+
+    .dotsprof {
+        display: none;
+    }
+
+    .dots3 {
+        display: none;
+    }
+
+    .dots2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 588px) {
+    .firstSection {
+        padding: 10px;
+    }
+    
+    .mainTextContainer {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 524px) {
+    .section3Container2 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .section4TextContainer {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 549px) {
+   .carousel {
+    zoom: 90%;
+   }
+}
+@media screen and (max-width: 522px) {
+   .carousel {
+    height: auto !important;
+   }
+
+   .mainCarousel h1 {
+    font-size: x-large;
+   }
+
+   .mainCarousel {
+    height: auto;
+   }
+
+   .profimage {
+    flex-direction: column;
+    height: auto;
+   }
+
+   .comment {
+    height: auto;
+    width: 100%;
+    padding: 10px;
+   }
+
+   .profileCard {
+    height: auto;
+   }
+
+   .section5 {
+    height: auto;
+   }
+
+   .controlsContainer {
+    height: auto;
+   }
+}
