@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 :root {
-    --fonts-main: 'Open Sans', sans-serif;
-    --grayText: #7D7987;
-    --lightBlue: #97C3F9;
+    --fonts-main: "Open Sans", sans-serif;
+    --grayText: #7d7987;
+    --lightBlue: #97c3f9;
 }
 
 * {
@@ -14,6 +14,10 @@
     scroll-behavior: smooth;
 }
 
+.transform {
+    transform: translateY(-100%);
+}
+
 header {
     width: 100%;
     height: 100px;
@@ -22,8 +26,12 @@ header {
     justify-content: space-between;
     flex-direction: row;
     padding: 0 100px;
-
+    z-index: 200 !important;
+    position: fixed;
+    transition: 0.4s cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }
+
+
 
 .logoHeader {
     display: flex;
@@ -31,6 +39,7 @@ header {
     gap: 20px;
     align-items: center;
     font-size: medium;
+    cursor: pointer;
 }
 
 .TLogo {
@@ -70,6 +79,16 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    animation: comein 0.7s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transform: translateX(-400px);
+    opacity: 0;
+}
+
+@keyframes comein {
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 .mainTextContainer h1 {
@@ -86,7 +105,7 @@ header {
     width: 200px;
     height: 56px;
     font-size: 18px;
-    background-color: #458FF6;
+    background-color: #458ff6;
     border-radius: 55px;
     color: white;
     outline: none;
@@ -96,6 +115,9 @@ header {
 .mainImageContainer {
     width: 900px;
     height: 40rem;
+    animation: comein 0.7s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transform: translateX(400px);
+    opacity: 0;
 }
 
 .dots {
@@ -119,7 +141,7 @@ header {
 .col1 div {
     width: 10px;
     height: 10px;
-    background-color: #97C3F9;
+    background-color: #97c3f9;
     display: flex;
     flex-direction: column;
     border-radius: 100%;
@@ -138,7 +160,6 @@ header {
     background-repeat: no-repeat;
     gap: 50px;
     position: relative;
-
 }
 
 .section2TextContainer {
@@ -147,6 +168,8 @@ header {
     justify-content: center;
     flex-direction: column;
     gap: 50px;
+    transform: translateY(-100px);
+    opacity: 0;
 }
 
 .section2TextContainer h1 {
@@ -171,7 +194,6 @@ header {
     justify-content: center;
     flex-direction: column;
     gap: 20px;
-
 }
 
 .cards1 {
@@ -182,6 +204,8 @@ header {
     justify-content: center;
     flex-direction: row;
     gap: 50px;
+    transform: translateX(-300px);
+    opacity: 0;
 }
 
 .card {
@@ -198,8 +222,8 @@ header {
 }
 
 .section2Btn {
-    color: #458FF6;
-    border: 2px solid #458FF6;
+    color: #458ff6;
+    border: 2px solid #458ff6;
     background: none;
     width: 200px;
     height: 59px;
@@ -233,16 +257,33 @@ header {
 
 .section3Cotnainer1 {
     width: 40%;
+    transform: translateX(-300px);
+    opacity: 0;
 }
 
 .section3Container2 {
     width: 40%;
     padding: 50px;
+    transform: translateX(300px);
+    opacity: 0;
+
 }
 
 .section3Container2 h1 {
     font-size: 36px;
     font-weight: 700;
+}
+
+
+.burgerMenu i {
+    color: #458ff6;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.burgerMenu {
+    transition: 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    display: none;    
 }
 
 .section3Container2 p {
@@ -423,7 +464,6 @@ header {
     z-index: -1;
 }
 
-
 .animated {
     animation: animate 1s forwards;
     z-index: 10;
@@ -488,7 +528,6 @@ header {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-
 }
 
 .articleCards {
@@ -527,8 +566,8 @@ header {
 }
 
 .viewAllButton {
-    color: #458FF6;
-    border: 2px solid #458FF6;
+    color: #458ff6;
+    border: 2px solid #458ff6;
     background: none;
     width: 200px;
     height: 59px;
@@ -537,7 +576,6 @@ header {
     font-weight: 700;
     cursor: pointer;
 }
-
 
 footer {
     width: 100%;
@@ -598,8 +636,6 @@ footer {
     }
 }
 
-
-
 @media screen and (max-width: 983px) {
     .carousel {
         height: 500px !important;
@@ -627,6 +663,10 @@ section {
 @media screen and (max-width: 1136px) {
     .navbarLinks {
         display: none;
+    }
+
+    .burgerMenu {
+        display: flex;
     }
 
     .firstSection {
@@ -705,7 +745,6 @@ section {
     }
 }
 
-
 @media screen and (max-width: 1071px) {
     .section3Container2 {
         width: 80%;
@@ -762,7 +801,7 @@ section {
     .firstSection {
         padding: 10px;
     }
-    
+
     .mainTextContainer {
         height: 400px;
     }
@@ -781,43 +820,131 @@ section {
 }
 
 @media screen and (max-width: 549px) {
-   .carousel {
-    zoom: 90%;
-   }
+    .carousel {
+        zoom: 90%;
+    }
 }
 @media screen and (max-width: 522px) {
-   .carousel {
-    height: auto !important;
-   }
+    .carousel {
+        height: auto !important;
+    }
 
-   .mainCarousel h1 {
-    font-size: x-large;
-   }
+    .mainCarousel h1 {
+        font-size: x-large;
+    }
 
-   .mainCarousel {
-    height: auto;
-   }
+    .mainCarousel {
+        height: auto;
+    }
 
-   .profimage {
-    flex-direction: column;
-    height: auto;
-   }
+    .profimage {
+        flex-direction: column;
+        height: auto;
+    }
 
-   .comment {
-    height: auto;
+    .comment {
+        height: auto;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .profileCard {
+        height: auto;
+    }
+
+    .section5 {
+        height: auto;
+    }
+
+    .controlsContainer {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 633px) {
+    header {
+        padding:10px 30px;
+    }
+
+    .logoHeader {
+        font-size: 10px;
+        gap: 5px;
+    }
+
+    .TLogo {
+        font-size: small;
+        width: 40px;
+        height: 40px;
+
+    }
+}
+
+
+
+.burgerTransform {
+    transform: rotateZ(90deg);
+}
+
+.burgermenuNav {
     width: 100%;
-    padding: 10px;
-   }
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.808);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(-100%);
+    transition: 0.7s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    display: none;
+}
 
-   .profileCard {
-    height: auto;
-   }
+.burgerIn {
+    transform: translateY(0%);
 
-   .section5 {
-    height: auto;
-   }
+}
 
-   .controlsContainer {
-    height: auto;
-   }
+.burgermenuNav a {
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+}
+
+.comeinAnimations {
+    animation: comeinAnimated 0.5s forwards cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+
+
+@keyframes comeinAnimated {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.come2 {
+    animation: comeinAnimated2 0.5s forwards cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@keyframes comeinAnimated2 {
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.come3 {
+    animation: comeinAnimated3 0.5s forwards cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@keyframes comeinAnimated3 {
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

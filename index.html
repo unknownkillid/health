@@ -12,21 +12,32 @@
 </head>
 
 <body>
-    <header>
+    <div class="burgermenuNav" id="burgerMenu">
+        <a href="#section1" >Home</a>
+            <a href="#secondsection">Find a doctor</a>
+            <a href="#apps">Apps</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#footer">About Us</a>
+    </div>
+    <header id="header">
         <div class="logoHeader">
             <div class="TLogo">T</div>
-            <h1>Trafalgar</h1>
+            <h1 id="logoTitle">Trafalgar</h1>
         </div>
         <div class="navbarLinks">
-            <a href="#" style="color: black;">Home</a>
+            <a href="#section1" style="color: black;">Home</a>
             <a href="#secondsection">Find a doctor</a>
             <a href="#apps">Apps</a>
             <a href="#testimonials">Testimonials</a>
             <a href="#footer">About Us</a>
         </div>
+
+        <div class="burgerMenu" id="burgerBtn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </header>
 
-    <section class="firstSection">
+    <section class="firstSection" id="section1">
         <div class="mainTextContainer">
             <h1>Virtual healthcare
                 <br> for you
@@ -73,7 +84,7 @@
 
 
     <section class="section2" id="secondsection">
-        <div class="section2TextContainer">
+        <div class="section2TextContainer" id="secondtransition">
             <h1>Our services</h1>
             <div class="line"></div>
             <p>We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo
@@ -126,7 +137,7 @@
                 </div>
 
             </div>
-            <div class="cards1">
+            <div class="cards1" id="cards12">
                 <div class="card">
                     <img src="assets/search.png" width="100px" alt="">
                     <br>
@@ -150,7 +161,7 @@
                 </div>
             </div>
 
-            <div class="cards1">
+            <div class="cards1" id="cards21">
                 <div class="card">
                     <img src="assets/cardio.png" width="100px" alt="">
                     <br>
@@ -206,10 +217,10 @@
             </div>
 
         </div>
-        <div class="section3Cotnainer1">
+        <div class="section3Cotnainer1" id="imgContainer3">
             <img src="assets/s3.png" width="100%" alt="">
         </div>
-        <div class="section3Container2">
+        <div class="section3Container2" id="textContainer3">
             <h1>Leading healthcare <br> providers</h1>
             <br> <br>
             <div class="lines3"></div>
@@ -434,7 +445,7 @@
     </footer>
 
 
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
